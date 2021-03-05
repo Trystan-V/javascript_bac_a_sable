@@ -3,5 +3,6 @@ function banana(){
 
  //document.location.reload(banane);
  banane.setAttribute( "src", "img/Plan de travail 3.png")
- document.body.appendChild(banane);   
+ document.body.appendChild(banane); 
 }
+

@@ -1,46 +1,76 @@
 .changement-couleur-background {
-    -webkit-animation: random 15s infinite;
-    animation: random 15s infinite;
-    }
-    
-    @keyframes random {
-    15% { background-color: #fa4d4d; } 
-    30% { background-color: #db5973; } 
-    45% { background-color: #f8a960; }
-    60% { background-color: #ec8667; } 
-    75% { background-color: #bf69b1; } 
-    }
+  -webkit-animation: random 15s infinite;
+  animation: random 15s infinite;
+}
 
+@keyframes random {
+  0% {
+    background-color: #ffcd27;
+  }
+  15% {
+    background-color: #fa4d4d;
+  }
+  30% {
+    background-color: #db5973;
+  }
+  45% {
+    background-color: #f8a960;
+  }
+  60% {
+    background-color: #ec8667;
+  }
+  75% {
+    background-color: #bf69b1;
+  }
+  100%{
+    background-color: #ffcd27;
+  }
+}
 
 /* buton "cliquer ici" */
 
 .bouton {
-    position: fixed;
-    margin-top: 19%;
-    margin-left: 43%;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 2em;
-    color: #ffffff57;
-    background-color: rgba(240, 248, 255, 0.356);
-    border-radius: 10px;
-    border: none;
+  position: absolute;
+  margin-top: 19%;
+  margin-left: 43%;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 2em;
+  color: #ffffff57;
+  background-color: rgba(240, 248, 255, 0.356);
+  border-radius: 10px;
+  border: none;
 }
 
 .bouton:hover {
-    color: rgb(228, 228, 228);
-    background-color: rgba(179, 41, 64, 0.726);
-}
- 
-img {
-    position: relative;
-    animation-duration: 5s;
-    animation-name: banane;
-    animation-iteration-count: infinite;
-    animation-delay: 4s;
+  color: rgb(228, 228, 228);
+  background-color: rgba(179, 41, 64, 0.726);
 }
 
-@keyframes banane {
-    from{ margin-top: 0%}
-    to{margin-top: 100%}
+.bouton:focus {
+  outline: none;
+}
+
+/* animation banane */
+
+img{
+    padding-left: 43%;
+    padding-bottom: 100%;
+}
+
+img {
+  position: relative;
+  animation-duration: 2s;
+  animation-name: banane-chute;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes banane-chute {
+  from {
+    margin-top: 0%;
+  }
+  to {
+    margin-top: 100%;
+  }
 }
